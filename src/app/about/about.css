@@ -1,0 +1,263 @@
+@import url('https://api.fontshare.com/v2/css?f[]=clash-display@400,500,600,700&display=swap');
+
+.about-page {
+  min-height: 100vh;
+  background-color: #000;
+  color: #fff;
+  font-family: 'Clash Display', sans-serif;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* Hero Section */
+.about-hero {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+  border-bottom: 1px solid #444;
+}
+
+.hero-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.hero-content h1 {
+  font-size: 5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+  font-family: 'Clash Display', sans-serif;
+}
+
+.hero-content p {
+  font-size: 1.25rem;
+  line-height: 1.6;
+  max-width: 600px;
+  margin: 0 auto;
+  font-weight: 400;
+}
+
+/* Introduction Section */
+.about-intro-section {
+  padding: 8rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  border-bottom: 1px solid #444;
+}
+
+.intro-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.intro-container h2 {
+  font-size: 3.5rem;
+  margin-bottom: 2rem;
+  letter-spacing: -0.02em;
+  font-weight: 600;
+}
+
+.intro-container p {
+  font-size: 1.25rem;
+  line-height: 1.6;
+  margin-bottom: 3rem;
+  color: #fff;
+  font-weight: 400;
+}
+
+.intro-container img {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.intro-container img:hover {
+  transform: scale(1.02);
+}
+
+/* Skills Section */
+.about-skills-section {
+  padding: 8rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.skills-container h2 {
+  font-size: 3.5rem;
+  text-align: center;
+  margin-bottom: 4rem;
+  letter-spacing: -0.02em;
+  font-weight: 600;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2.5rem;
+  margin-top: 2rem;
+  padding: 0 1rem;
+}
+
+.skill-card {
+  background: #111;
+  border: 1px solid #333;
+  border-radius: 12px;
+  padding: 2.5rem;
+  text-align: left;
+  box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
+}
+
+.skill-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+}
+
+.skill-card h3 {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+  letter-spacing: -0.01em;
+  font-weight: 500;
+}
+
+.skill-card p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #fff;
+  font-weight: 400;
+}
+
+/* Contact Section */
+.about-contact-section {
+  padding: 8rem 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  border-top: 1px solid #444;
+}
+
+.contact-container h2 {
+  font-size: 3.5rem;
+  margin-bottom: 2rem;
+  letter-spacing: -0.02em;
+  font-weight: 600;
+}
+
+.contact-container p {
+  font-size: 1.25rem;
+  line-height: 1.6;
+  margin-bottom: 3rem;
+  color: #fff;
+  font-weight: 400;
+}
+
+.contact-button {
+  display: inline-block;
+  padding: 1rem 2.5rem;
+  background: #fff;
+  color: #000;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  font-family: 'Clash Display', sans-serif;
+}
+
+.contact-button:hover {
+  background: #f0f0f0;
+  transform: translateY(-2px);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+  .hero-content h1 {
+    font-size: 4rem;
+  }
+  
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 3.5rem;
+  }
+  
+  .intro-container h2,
+  .skills-container h2,
+  .contact-container h2 {
+    font-size: 3rem;
+  }
+  
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .about-intro-section,
+  .about-skills-section,
+  .about-contact-section {
+    padding: 4rem 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-content h1 {
+    font-size: 2.75rem;
+  }
+  
+  .hero-content {
+    padding: 1rem;
+  }
+  
+  .skill-card {
+    padding: 1.5rem;
+  }
+  
+  .intro-container h2,
+  .skills-container h2,
+  .contact-container h2 {
+    font-size: 2.5rem;
+  }
+}

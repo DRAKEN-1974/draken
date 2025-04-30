@@ -1,0 +1,35 @@
+/* Importing Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&display=swap');
+
+/* Styling for the Last Section */
+.last-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60vh;
+  background: linear-gradient(135deg, #f3e8ff, #e4c1f9); /* Soft pastel gradient */
+  padding: 20px;
+}
+
+.last-content {
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background for contrast */
+  padding: 30px 50px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.last-title {
+  font-family: 'Sora', sans-serif;
+  font-size: 48px; /* Large font for the title */
+  font-weight: 700;
+  color: #5c248c; /* Purple tone matching the theme */
+  margin-bottom: 15px;
+}
+
+.last-subtitle {
+  font-family: 'Sora', sans-serif;
+  font-size: 24px; /* Slightly smaller font for subtitle */
+  font-weight: 400;
+  color: #333; /* Neutral dark color for readability */
+}
