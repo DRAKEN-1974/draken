@@ -179,10 +179,10 @@
   border: 1px solid #f56565;
 }
 
-/* Smooth scroll behavior for the entire page */
-:global(html) {
+.scrollWrapper :global(html) {
   scroll-behavior: smooth;
 }
+
 
 
 /* Add glass effect to form container */
