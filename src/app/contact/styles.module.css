@@ -180,9 +180,10 @@
 }
 
 /* Smooth scroll behavior for the entire page */
-html {
+:global(html) {
   scroll-behavior: smooth;
 }
+
 
 /* Add glass effect to form container */
 .formContainer {
